@@ -83,4 +83,12 @@ Revision history for Perl extension Getopt::Simple.
         - The clean_argv subroutine would infinitely loop if the
           the arguments contained "-a -b".  This was fixed at the
           expense of some ugly code.  (see line 161)
-
+0.13.1	Fri May  9 11:53:35 EDT 2003	(by ahicox)
+	- fixed for MakeMaker:
+		- removed .pl suffix from example.pl so that it won't
+		  be picked up by MakeMaker
+		- moved Casual.pm out of 'Getopt' subdirectory, so that
+		  it WILL be picked up by MakeMaker
+		- modified MANIFEST to reflect changes
+		- modified this document
+		- incremented $VERSION in Casual.pm

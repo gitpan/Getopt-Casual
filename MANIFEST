@@ -1,9 +1,9 @@
 Changes
-Getopt/Casual.pm
+Casual.pm
 MANIFEST
 Makefile.PL
 README
-example.pl
+example
 t/1_check_args.t
 t/2_check_import.t
 t/3_check_ARGV.t

@@ -90,7 +90,7 @@ use strict qw/ vars subs /;
 use vars qw/ $VERSION @ISA /;
 
 #-- $Id: Casual.pm,v 1.3 2001/04/12 20:45:37 daniel Exp $
-$VERSION = "0.13";
+$VERSION = "0.13.1";
 
 sub import {
 
@@ -194,6 +194,7 @@ Daniel M. Lipton  <photo@tiac.net>
 
 Patrick M. Jordan <patrick@antistatic.com>
 Ronald J. Kimball <rjk@linguist.dartmouth.edu>
+Andrew N. Hicox <Andrew N. Hicox>
 
 =cut
 
