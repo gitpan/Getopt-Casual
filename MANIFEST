@@ -6,3 +6,4 @@ README
 example.pl
 t/1_check_args.t
 t/2_check_import.t
+t/3_check_ARGV.t

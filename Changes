@@ -60,3 +60,27 @@ Revision history for Perl extension Getopt::Simple.
 	  If that argument is seen again, then it will overwrite the 0
 	  because it is depending on ||=.  Have not fixed this yet.
 
+0.10  Wed May 10 16:49:00 2000 
+        - Was a bad boy and did not update the changes file.
+
+0.11  Mon Sep 11 10:04:00 2000
+        - Fixed above bug when value is set to 0.
+        - Fixed error that wouldn't allow the module to compile under
+          perl 5.005_03.
+        - Discovered Makefile is not actually making a Getopt::Casual.3
+	  manpage.
+
+0.12  Fri Jan 01 03:30:30 2001
+        - Added Copying to MANIFEST.
+
+0.13  Fri May 10 08:58:45 2002
+        - Finally begun working on fixing outstanding bugs and requests
+          again.  I had unfortunately lost a copy of the most recent
+          unreleased version.  Thanks to a bug, it was sent back to me
+          though.  :-)
+        - Removed Copying from MANIFEST, as the GPL v2 is contained
+          within the README.  If you need help copying man cp.
+        - The clean_argv subroutine would infinitely loop if the
+          the arguments contained "-a -b".  This was fixed at the
+          expense of some ugly code.  (see line 161)
+

@@ -1,8 +1,9 @@
 print '1..9', "\n";
 
 delete $INC{ 'Getopt/Casual.pm' };
-@ARGV = qw/ -d 8 aux rows 12 cols 24 a=b -bcd -e -fg=h i 
+@ARGV = qw/ -d 0 aux rows 12 cols 24 a=b -bcd -e -fg=h i 
             --debug=no --silent /;
+use lib '..';
 require Getopt::Casual;
 import Getopt::Casual @ARGV;
 
@@ -38,7 +39,7 @@ if ($ARGV{ 'a' } eq 'b') {
 }
 
 if ($ARGV{ '-b' } == 1 && $ARGV{ '-c' } == 1 &&
-  $ARGV{ '-d' } == 8 && $ARGV{ '-bcd' } == 1) {
+  $ARGV{ '-d' } == 0 && $ARGV{ '-bcd' } == 1) {
 
   print 'ok 4', "\n";
 
