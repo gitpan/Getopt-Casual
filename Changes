@@ -1,0 +1,31 @@
+Revision history for Perl extension Getopt::Simple.
+
+0.01  Thu Aug 12 10:00:00 1999
+	- original version; created by h2xs 1.18
+
+0.02  Fri Aug 13 07:30:00 1999
+	- corrected algorithm so that it produces predictable results
+
+0.03  Thu Jan 20 10:15:00 2000
+	- created a distribution with documentation and less
+	  obfuscated code.
+	- released code for peer review
+
+0.04  Thu Jan 24 16:30:00 2000
+	- Added README
+	- Changed name from Getopt::Simple to Getopt::Simpler to 
+	  avoid namesapce collisionn
+	- Added $verbose for debugging.
+
+0.05  Mon Feb 07 02:30:00 2000
+	- Changed name from Getopt::Simpler to Getopt::Casual because
+	  casual implies the module wears sunglasses at night.
+	- Fixed "unitialized variable" warning when @ARGV ends in two 
+	  scalars that begin with '-'
+	- Changed test.pl to t/1_check_args.t
+
+0.06  Tue Feb 08 04:55:00 2000
+        - Added import method for setting defaults.  The import method
+	  works just like @ARGV, instead with the format 
+
+	    use Getopt::Casual qw/ -a 33 -b 21 -c 
